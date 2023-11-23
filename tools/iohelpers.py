@@ -19,4 +19,22 @@ class IOHelpers:
         for line in lines:
             stripped.append(line.strip())
         return stripped
+    
+    def parse_by_newline(source_file, splitter=" ", one_per_line=False):
+        file = open(source_file, 'r')
+        lines = file.readlines()
+        result = []
+        current = []
+        for line in lines:
+            if line.strip() == "":
+                result.append(current)
+                current = []
+            else:
+                ct = line.strip().split(splitter)
+                if one_per_line: ct = ct[0]
+                current.append(ct)
+
+        result.append(current)
+        return result
+            
 

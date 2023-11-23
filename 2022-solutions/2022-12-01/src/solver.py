@@ -27,6 +27,7 @@ class Solver:
 
     def calorie_counting(source_file):
         input = IOHelpers.read_lines(source_file)
+        print(IOHelpers.parse_by_newline(source_file, one_per_line=True))
         max_elf_cals_list = [-1, -1, -1]
         current_elf_cals = 0
         for line_raw in input:
