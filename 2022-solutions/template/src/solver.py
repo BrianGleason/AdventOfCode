@@ -17,3 +17,6 @@ class Solver:
 
 soln = Solver.solve('C:\\Users\\gleas\\Projects\\AdventOfCode\\2022-solutions\\2022-12-02\\input\\DATA.txt')
 print(soln)
+
+solndemo = Solver.solve('C:\\Users\\gleas\\Projects\\AdventOfCode\\2022-solutions\\2022-12-02\\input\\DATA.txt')
+print(solndemo)
