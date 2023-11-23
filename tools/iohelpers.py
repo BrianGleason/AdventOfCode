@@ -15,7 +15,8 @@ class IOHelpers:
     def read_lines_stripped(source_file):
         file = open(source_file, 'r')
         lines = file.readlines()
+        stripped = []
         for line in lines:
-            line = line.strip()
-        return lines
+            stripped.append(line.strip())
+        return stripped
 
