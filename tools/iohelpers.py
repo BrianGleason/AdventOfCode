@@ -20,6 +20,16 @@ class IOHelpers:
             stripped.append(line.strip())
         return stripped
     
+    def parse_by_newline(source_file, splitter=" ", one_per_line=False):
+        file = open(source_file, 'r')
+        lines = file.readlines()
+        result = []
+        for line in lines:
+            current = line.strip().split(splitter)
+            if one_per_line: current = current[0]
+            result.append(current)
+        return result
+    
     def parse_by_empty_newline(source_file, splitter=" ", one_per_line=False):
         file = open(source_file, 'r')
         lines = file.readlines()
