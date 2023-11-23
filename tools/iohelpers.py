@@ -20,7 +20,7 @@ class IOHelpers:
             stripped.append(line.strip())
         return stripped
     
-    def parse_by_newline(source_file, splitter=" ", one_per_line=False):
+    def parse_by_empty_newline(source_file, splitter=" ", one_per_line=False):
         file = open(source_file, 'r')
         lines = file.readlines()
         result = []
