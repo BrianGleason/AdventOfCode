@@ -10,12 +10,12 @@ class Solver:
     def __init__():
         pass
 
-    def solve():
+    def solve(path):
         pass
 
 
 
-soln = Solver.solve('C:\\Users\\gleas\\Projects\\AdventOfCode\\2022-solutions\\2022-12-02\\input\\DATA.txt')
+soln = Solver.solve('C:\\Users\\gleas\\Projects\\AdventOfCode\\2022-solutions\\2022-12-02\\input\\DEMO.txt')
 print(soln)
 
 solndemo = Solver.solve('C:\\Users\\gleas\\Projects\\AdventOfCode\\2022-solutions\\2022-12-02\\input\\DATA.txt')
