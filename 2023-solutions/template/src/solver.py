@@ -11,7 +11,18 @@ class Solver:
         pass
 
     def solve(path):
-        pass
+        file = open(path)
+        lines = file.readlines()
+        string = file.read()
+        strippedlines = []
+        splitlines = []
+        split_char = " "
+
+        for line in lines:
+            stripped = line.strip()
+            strippedlines.append(stripped)
+            split = line.split(split_char)
+            splitlines.append(split)
 
 
 
